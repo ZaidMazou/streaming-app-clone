@@ -23,8 +23,8 @@ const Movies = () => {
         <section className="movies">
             <div className="moviesbox">
                 {
-                    data.map((element)=>(
-                       element.primaryImage !== null ? <CardMovies key={element.id} element={element}/> :<></>
+                    data.map((element,index)=>(
+                       element.primaryImage !== null ? <CardMovies key={index} element={element}/> :<></>
                     ))
                 }
             </div>

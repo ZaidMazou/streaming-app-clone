@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Groupeimage = () => {
     const [movies, setmovies] = useState();
@@ -25,13 +25,12 @@ const Groupeimage = () => {
             <div className="images">
                 {
                     movies ?
-                    movies.map((element)=>(
-                        element.primaryImage ? <Link to={'/show/'+element.id}><img src={element.primaryImage.url} id='img' alt=""/></Link> :null
+                    movies.map((element,index)=>(
+                        element.primaryImage ? <NavLink to={'/show/'+element.id}><img src={element.primaryImage.url} id='img' alt=""key={index} /></NavLink> :null
                     )): <span></span>
                 }
             </div>
         </div>
     );
 };
-
 export default Groupeimage;

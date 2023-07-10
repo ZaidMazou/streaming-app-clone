@@ -22,8 +22,8 @@ const MostPopular = () => {
         <section className="most-popular">
             <div className="boxMost-popular">
                 {
-                    data.map((element)=>(
-                        <CardMostPopular key={element.id} element={element}/>
+                    data.map((element,index)=>(
+                        <CardMostPopular key={index} element={element}/>
                     ))
                 }
             </div>
