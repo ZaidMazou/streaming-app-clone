@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 
 const MainShower = () => {
   const [data, setdata] = useState();
-    const id = useParams()
+    const {id} = useParams()
 
     const options = {
         method: 'GET',
@@ -16,7 +16,7 @@ const MainShower = () => {
         }
       };
       useEffect(()=>{
-        axios.get(`https://moviesdatabase.p.rapidapi.com/titles/${id.id}`,options)
+        axios.get(`https://moviesdatabase.p.rapidapi.com/titles/${id}`,options)
         .then((res)=>setdata(res.data.results))
       },[])
     return (

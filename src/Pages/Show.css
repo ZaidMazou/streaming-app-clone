@@ -106,9 +106,6 @@ span{
     place-items: center;
     text-align: center;
 }
-#groupelement{
-    margin: 5%;
-}
 
 .cp{
     /* width: 100vh; */
@@ -118,6 +115,63 @@ span{
     display: flex;
     color: white;
     margin-bottom: 10px;
+}
+@media (max-width : 600px) {
+    
+    .main{
+        width: 100%;
+        padding-left: 0;
+    }
+    .groupeimage{
+        display: none;
+    }
+    .first{
+        margin-top: -30px;
+        width: 100%;
+    }
+    .image1{
+        width: 100vw;
+        height: 300px;
+    }
+    .image1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .options{
+        width: 375px;
+        margin-left: 175px;
+    }
+    .content{
+        margin: 5px;
+    }
+    .content svg{
+        height: 12px;
+        width: 12px;
+    }
+    .content h6{
+        font-size: 12px;
+    }
+    .first .title{
+        font-size: 17px;
+        margin: 10px;
+    }
+    .first #div{
+        padding: 10px;
+    }
+    .first .description{
+        margin-top: 20px;
+        padding: 10px;
+    }
+    
+}
+
+@media (max-width : 1200px) {
+    .groupeimage{
+        width: 350px;
+    }
+    .images{
+        width: 350px;
+    }
 }
 
 

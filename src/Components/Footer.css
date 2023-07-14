@@ -51,3 +51,15 @@ footer{
     font-size: 15px;
     text-transform: uppercase;
 }
+@media (max-width:600px) {
+    footer{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    footer .logo-show{
+        margin-bottom: 20px;
+    }
+}
