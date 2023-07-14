@@ -4,7 +4,7 @@ const SecondCard = ({element}) => {
     return (
         <div className="fille">
             {
-                element.primaryImage ? <img src={element.primaryImage.url} alt="" id="img1"/>:null
+                element.primaryImage ? <a href={'/show/'+element.id}><img src={element.primaryImage.url} alt="" id="img1"/></a>:null
             }
         </div>
     );
